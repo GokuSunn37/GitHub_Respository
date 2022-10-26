@@ -1,0 +1,19 @@
+html {
+    background-color: rgb(64, 71, 72);
+    width: 100%;
+    height: auto;
+}
+
+#btnHome {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 25%;
+    border-color: rgb(0, 255, 187);
+    border-width: 2px;
+    border-style: solid;
+    width: 5%;
+    height: 5%;
+    text-align: center;
+    font-weight: 550;
+    font-size: medium;
+    color: white;
+}
