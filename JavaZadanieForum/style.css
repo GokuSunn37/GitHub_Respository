@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.header {
+    margin-top: 1rem;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.container {
+    display: inline-block;
+    width: 700;
+}
+
+.language {
+    margin-top: 6rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(94, 94, 94);
+    padding: 12px 16px;
+    border-radius: 5px 5px 0 0;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    overflow-x: auto;
+}
+
+.code-wrapper {
+    position: relative;
+    overflow-x: auto;
+}
+
+.code-wrapper pre {
+    background-color: rgb(245, 245, 245);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 7px;
+    background-color: #272727;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    opacity: 0;
+}
+
+#copy-button:hover {
+    background-color: #313131;
+}
+
+.code-wrapper:hover #copy-button {
+    opacity: 1;
+}
+
+#copy-success {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5e5e5e;
+    color: white;
+    padding: 16px 32px;
+    font-size: 24px;
+    border-radius: 5px;
+    display: none;
+}
+
+#copy-success.show-message {
+    display: inline-block;
+}
+
+.hljs {
+    background-color: transparent;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.text {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+    color: rgb(158, 0, 0);
+}

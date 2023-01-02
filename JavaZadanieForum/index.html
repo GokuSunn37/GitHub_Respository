@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css"/>
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js"></script>
+        <script defer src="app.js"></script>
+        <title>Document</title>
+    </head>
+    <body>        
+        <div class="container">
+
+            <div class="header">
+                <h1>Java</h1>                
+            </div>
+
+            <br><br><br>
+
+            <li>
+                <a href="#tozwk">Tworzenie obiektów z wieloma konstruktorami</a>                
+            </li>
+            <li>
+                <a href="#hermetyzacja">Hermetyzacja</a>                
+            </li>
+            <li>
+                <a href="#mpip">Metody publiczne i prywatne</a>
+            </li>
+
+            <p class="language" id="language-copy">Tworzenie obiektów z wieloma konstruktorami</p>
+            <div class="code-wrapper"  id="tozwk">
+                <pre>
+                    <code id="code" class="hidden">
+class Punkt {
+    int x;
+    int y;
+                            
+    public Punkt(int a, int b){
+        x = a;
+        y = b;
+    }
+
+    public Punkt2(int c, int d){
+        x = c;
+        y = d;
+    }
+
+    public Punkt3(int e, int f){
+        x = e;
+        y = f;
+    }
+}
+                    </code>
+                </pre>
+                <button id="copy-button">Copy</button>
+            </div>
+            <span id="copy-success">Code copied! :)</span>
+            <br>
+            <h2 class="text">Obiekty i konstruktory</h2>
+            <br>
+            <h3 class="text">Obiekty:</h3>
+            <br>
+            <p class="text">W Javie obiekty rozumiemy dwojako: jako koncepcję oraz jako klasę. Ten pierwszy przypadek jest ważniejszy. <br> Koncepcję obiektów znamy dzięki programowaniu obiektowemu. <br> Tamtejsze obiekty zawierają w sobie stan i wystawiają w sposób publiczny pewne zachowanie.</p>
+            <br>
+            <h3 class="text">Konstruktory:</h3>
+            <br>
+            <p class="text">Zadaniem konstruktora jest inicjalizacja obiektu podczas jego tworzenia. Konstruktor ma taką samą nazwę <br>jak klasa i z punktu widzenia składni jest podobny do metody. Konstruktory nie mają jednak określonego typu <br> zwracanego.</p>
+
+            <p class="language" id="language-copy">Hermetyzacja</p>
+            <div class="code-wrapper" id="hermetyzacja">
+                <pre>
+                    <code id="code" class="hidden">
+class age {
+    public int age;
+}
+
+class myAge implements age{
+    Age age = new age();
+
+    System.out.println(age);
+}
+                    </code>
+                </pre>
+                <button id="copy-button">Copy</button>
+            </div>
+            <span id="copy-success">Code copied! :)</span>
+
+            <br>
+            <h2 class="text">Hermetyzacja</h2>
+            <br>
+            <p class="text">Hermetyzacja (enkapsulacja) - ograniczenie bezpośredniego dostępu do niektórych pól obiektów,<br> ewentualnie umożliwienie ich modyfikacji poprzez metody. O dostępności pól i metod decydują tzw.<br> specyfikatory dostępu: public, private i protected.</p>
+
+            <p class="language mpip" id="language-copy">Metody publiczne i prywatne</p>
+            <div class="code-wrapper">
+                <pre>
+                    <code id="code" class="hidden">
+                   
+public Punkt(int id, String name){
+    id = 1;
+    name = Adrian;
+}
+
+private Punkt2(int c, String surname){
+    id = 2;
+    surname = Ziębowski;
+}
+                    </code>
+                </pre>
+                <button id="copy-button">Copy</button>
+            </div>
+            <span id="copy-success">Code copied! :)</span>
+
+            <br>
+            <h2 class="text">Metody publiczne i prywatne</h2>
+            <br>
+            <p class="text">Publiczne (public): wszystkie zmienne i metody domyślnie są publiczne. <br> Oznacza to że są dostępne dla użytkownika klasy i mogą być w dowolny sposób zmieniane, modyfikowane itp.<br><br> Prywatne (private): Jeżeli zmienne z jakiegoś powodu są istotne dla dla działania klasy powinny być definiowane.</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    </body>
+</html>

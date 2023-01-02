@@ -1,0 +1,59 @@
+* {
+    font-family: Garamond;
+    margin: 0 auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+footer, header {
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(#97b498, #c8e6c9);
+    font: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.left {
+    background-color: #c8e6c9;
+    color: #005005;
+    width: 40%;
+    height: 600px;
+    float: left;
+}
+
+.right {
+    color: #005005;
+    width: 60%;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+footer {
+    background: linear-gradient( #c8e6c9,#c8e6c9);
+    color: white;
+    padding: 12px;
+}
+
+video {
+    width: 100%;
+}
+
+form {
+    padding: 10px 50px 10px 50px;
+}
+
+button{
+    background-color: #97b498;
+    color: white;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}

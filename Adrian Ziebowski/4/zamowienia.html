@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zamówienia hurtowe</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="skrypt.js" defer></script>
+    </head>
+    <body onload="zaznaczanieBrakow()">
+
+        <header>
+
+            <h1>Sieci komputerowe</h1>
+
+        </header>
+
+        <section class="left">
+
+            <h2>Aktualizacja i zamówienia materiałów</h2>
+            <p>Do wewnętrznego użytku firmy</p>
+
+            <img src="obraz.png" alt="sieć komputerowa">
+
+        </section>
+
+        <section class="right">
+
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Jednostka</th>
+                    <th>Dostępna ilość</th>
+                    <th>Aktualizacja</th>
+                    <th>Zamówienie</th>
+                </tr>
+                <tr>
+                    <td id="produkt1">Skrętka U/UTP drut</td>
+                    <td>metr</td>
+                    <td class="ilosc" id="ilosc1">20</td>
+                    <td><button onclick="aktualizacja(`ilosc1`)">Aktualizuj</button></td>
+                    <td><button onclick="zamowienie(`produkt1`)">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="produkt2">Skrętka U/UTP linka</td>
+                    <td>metr</td>
+                    <td class="ilosc" id="ilosc2">2</td>
+                    <td><button onclick="aktualizacja(`ilosc2`)">Aktualizuj</button></td>
+                    <td><button onclick="zamowienie(`produkt2`)">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="produkt3">Wtyki 8P8C</td>
+                    <td>sztuki</td>
+                    <td class="ilosc" id="ilosc3">10</td>
+                    <td><button onclick="aktualizacja(`ilosc3`)">Aktualizuj</button></td>
+                    <td><button onclick="zamowienie(`produkt3`)">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="produkt4">Moduły Keystone</td>
+                    <td>sztuki</td>             
+                    <td class="ilosc" id="ilosc4">30</td>
+                    <td><button onclick="aktualizacja(`ilosc4`)">Aktualizuj</button></td>
+                    <td><button onclick="zamowienie(`produkt4`)">Zamów</button></td>
+                </tr>
+            </table>
+
+        </section>
+
+        <footer>
+
+            <a href="http://sieci.pl/" target="_blank">Nasza strona internetowa</a>
+            <p>Stronę przygotował: Adrian Ziębowski</p>
+            
+        </footer>
+
+    </body>
+</html>
